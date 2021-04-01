@@ -28,6 +28,12 @@ namespace RazorCrud
 
             services.AddDbContext<RazorCrudActorContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("RazorCrudActorContext")));
+
+            services.AddDbContext<RazorCrudActriceContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("RazorCrudActriceContext")));
+
+            services.AddDbContext<RazorCrudDirectorContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("RazorCrudDirectorContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
