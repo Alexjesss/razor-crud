@@ -16,7 +16,7 @@ namespace RazorCrud.Models
 
             [StringLength(60, MinimumLength = 3)]
             [Required]
-            public string Title { get; set; }
+            public string Movie { get; set; }
 
             [Display(Name = "Release Date")]
             [DataType(DataType.Date)]
